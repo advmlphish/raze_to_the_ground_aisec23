@@ -1,8 +1,8 @@
 beautifulsoup4==4.11.1
 IPy==1.1
-joblib=1.1.0
+joblib==1.1.0
 numpy==1.21.5
-requests=2.25.1
+requests==2.25.1
 tensorflow==2.8.2
 tld==0.12.6
 ullib3==1.26.16

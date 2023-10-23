@@ -18,7 +18,7 @@ The source code is organized as follows. The `src/` directory includes the follo
 
 * `model.py` implements a wrapper for Tensorflow and Scikit-learn models.
 
-Moreover, the root directory of the repository includes the scripts to run the adversarial attacks. Specifically, they are:
+Moreover, the root directory of the repository includes the following scripts to run the adversarial attacks:
 * `run_adv_attacks.py` contains the source code to generate adversarial phishing webpage against a taget machine-learning model.
 
 * `run_experiments.py` contains the source code to run the experiments. It is based on the source code of [SpacePhish](https://github.com/hihey54/acsac22_spacephish/tree/main).

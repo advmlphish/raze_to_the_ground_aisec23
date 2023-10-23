@@ -1,7 +1,9 @@
 beautifulsoup4==4.11.1
 IPy==1.1
 joblib==1.1.0
+html2image==2.0.3
 numpy==1.21.5
+Pillow==9.5.0
 requests==2.25.1
 tensorflow==2.8.2
 tld==0.12.6

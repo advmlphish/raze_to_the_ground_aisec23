@@ -90,7 +90,7 @@ def run_attack(
             optimizer = Optimizer(model, num_rounds)
             best_score, adv_example, num_queries, run_time, scores_trace = optimizer.optimize(input_sample)
             html_adv_obj, adv_url = adv_example
-            print("Reached confidence {}, runtime: {:.4f} s)".format(best_score, run_time))
+            print("Reached confidence {}, runtime: {:.4f} s\n".format(best_score, run_time))
 
             info = {'sample_id': file_id, 'best_score': float(best_score), 'adv_url': adv_url,
                     'num_queries': num_queries, 'run_time': run_time, 'scores_trace': str(scores_trace)}
@@ -102,9 +102,8 @@ def run_attack(
             with open(adv_html_filepath, 'w', encoding='utf-8') as fp:
                 fp.write(str(html_adv_obj.prettify()))
 
-            print('\n')
         else:
-            print("Skipping input sample #{}, already analyzed\n".format(file_id))
+            print("Skipping sample #{}, already analyzed\n".format(file_id))
 
 
 if __name__ == "__main__":

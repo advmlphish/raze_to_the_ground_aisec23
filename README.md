@@ -38,8 +38,8 @@ python3 -m venv $HOME/venv_adv_phishing
 source $HOME/venv_adv_phishing activate
 python -m pip install -r requirements.txt
 ```
-The next step is to download the _DeltaPhish_ dataset used in _SpacePhish_.
-As described in the _SpacePhish_ repository see [get_data.md](https://github.com/hihey54/acsac22_spacephish/blob/main/get_data.md), you can dowload it using [this link](https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing).
+The next step is to download the _DeltaPhish_ dataset.
+As described in the _SpacePhish_ repository (see [get_data.md](https://github.com/hihey54/acsac22_spacephish/blob/main/get_data.md)), you can dowload it using [this link](https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing).
 The password is "yy123" (without quotes).  
 The last step to complete the setup is to set the `data_base_path` and `models_path` configuration variables in the `run_experiments.py` file according to your environment.  
 They should point to the dataset used in _SpacePhish_ and the folder with the trained ML models, respectively.  

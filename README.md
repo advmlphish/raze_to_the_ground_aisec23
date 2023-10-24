@@ -88,7 +88,7 @@ Finally, to visualize the generated adversarial phishing webpages and the respec
 `python3 -m venv $HOME/venv_adv_phishing`.
 
 5. Activate the created venv:  
-`source $HOME/venv_adv_phishing activate`.
+`source $HOME/venv_adv_phishing/bin/activate`.
 
 6. Install the required Python packages:  
 `python -m pip install -r requirements.txt`.

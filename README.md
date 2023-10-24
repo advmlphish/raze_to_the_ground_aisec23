@@ -57,7 +57,7 @@ It includes the main code to run the experiments and visualize the results:
 * `run_adv_attacks.py`: Python script that contains the source code to generate adversarial phishing webpages against a target machine-learning model.
 * `check_rendering.py`: Python script to verify whether the generated adversarial phishing webpages have the same rendering of their respective phishing samples.
   This script renders a phishing webpage and its corresponding adversarial example in the Google Chrome browser, captures their screenshots, and computes their SHA-256 checksum to check if they are the same.
-  This can be run on the samples included in the `samples` folder.
+  This can be run on the samples included in the `samples/` folder.
 * `experiments_analysis.ipynb`: Jupyter notebook to visualize and interpret the results. It reports the security evaluation curves showing how the detection rate at 1% False Positive Rate (FPR) changes w.r.t. the number of queries, considering the best sequence of manipulations.
 
 
@@ -93,7 +93,8 @@ Finally, to visualize the generated adversarial phishing webpages and the respec
 6. Install the required Python packages:  
 `python -m pip install -r requirements.txt`.
 
-7. Download the _DeltaPhish_ dataset using this link: [https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing](https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing). The password is `yy123`.
+7. Download the _DeltaPhish_ dataset using this link: [https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing](https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing).  
+The password is `yy123`.
  
 8. Set the `data_base_path` and `models_path` configuration variables in the `run_experiments.py` file according to your environment.  
 They should point to the dataset used in _SpacePhish_ and the folder with the trained ML models, respectively.  

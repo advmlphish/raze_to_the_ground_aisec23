@@ -6,7 +6,7 @@ import os
 # config options:
 data_base_path = '/adv_phishing_workspace/data_folder/deltaphish'   # NOTE: change according to your setup
 models_path = os.path.join(os.getcwd(), 'models')   # NOTE: change according to your setup
-out_base_path = os.path.join(os.getcwd(), 'experiments_test')
+out_base_path = os.path.join(os.getcwd(), 'experiments')
 num_rounds_default = 5
 
 models_info = [

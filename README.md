@@ -81,8 +81,8 @@ Finally, to visualize the generated adversarial phishing webpages and the respec
 2. Move into the artifact root folder:  
 `cd raze_to_the_ground_aisec23`.
 
-3. Select the proper commit:  
-`git checkout 54c895f`.
+3. Select the current stable release:  
+`git checkout v1.0`.
 
 4. Create a Python virtual environment (venv) if not already done:  
 `python3 -m venv $HOME/venv_adv_phishing`.
@@ -93,11 +93,11 @@ Finally, to visualize the generated adversarial phishing webpages and the respec
 6. Install the required Python packages:  
 `python -m pip install -r requirements.txt`.
 
-7. Download the _DeltaPhish_ dataset using this link: [https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing](https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing).  
+7. Download the data used in _SpaecPhish_, including the _DeltaPhish_ dataset, using this link: [https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing](https://drive.google.com/drive/folders/1k_aqmk5CTlhxlGfrg4jRSG5RxyX0NB9w?usp=sharing).  
 The password is `yy123`.
- 
+
 8. Set the `data_base_path` and `models_path` configuration variables in the `run_experiments.py` file according to your environment.  
-They should point to the dataset used in _SpacePhish_ and the folder with the trained ML models, respectively.  
+They should point to the _DeltaPhish_ dataset and the folder with the trained models, respectively.
 
 9. At this point you are ready to run the HTML adversarial attacks against the pre-trained models:  
 `python run_experiments.py`.  
